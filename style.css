@@ -7,44 +7,55 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* This background is for the page BEHIND the card, just in case */
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0; /* A neutral background for the page itself */
 }
 
-.card-container {
-    /* Assumes 'invitacion.png' is in the same folder */
-    background-image: url('invitacion.png');
-    background-size: cover;
-    background-position: center;
-    
+/* This is the main container that establishes the positioning context */
+.invitation-wrapper {
+    position: relative; /* Crucial for positioning the text on top */
+    width: 90%; /* Adjust width as needed */
+    max-width: 500px; /* This will be the max size of your invitation */
+}
+
+/* This ensures your image is responsive and doesn't overflow its container */
+.background-image {
     width: 100%;
-    max-width: 500px; /* Limits the width on larger screens */
-    padding: 40px 25px;
-    box-sizing: border-box;
-    text-align: center;
-    border-radius: 20px; /* Softens the corners if the background doesn't cover fully */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    height: auto;
+    display: block; /* Removes extra space below the image */
+}
+
+/* This is the container for your text. It sits on top of the image. */
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .main-title {
-    /* This font is for the "FELICIDADES" title */
     font-family: 'Luckiest Guy', cursive;
-    font-size: 4.5em; /* Large and impactful */
-    color: #d90429; /* Using the same strong red from before */
+    font-size: 4.5em;
+    color: #d90429;
     margin: 0;
     line-height: 1;
-    text-shadow: 3px 3px 0px #fff; /* White shadow to make it pop against the background */
+    text-shadow: 3px 3px 0px #fff;
 }
 
 .content-box {
-    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white box for readability */
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius: 15px;
     padding: 10px 20px;
-    margin-top: 20px;
-    color: #003b73; /* Dark blue text */
+    margin-top: 15px;
+    color: #003b73;
+    max-width: 90%;
 }
 
 .content-box p {
@@ -54,9 +65,9 @@ body, html {
 }
 
 ul {
-    list-style: none; /* Removes the default bullet points */
+    list-style: none;
     padding: 0;
-    text-align: left; /* Aligns the list text to the left within the box */
+    text-align: left;
     margin-top: 15px;
 }
 
@@ -66,20 +77,19 @@ li {
     font-size: 1em;
 }
 
-/* Adds a star emoji before each list item for a playful touch */
 li::before {
     content: '⭐';
     margin-right: 10px;
 }
 
 .action-link {
-    background-color: #fca311; /* Bright yellow button */
+    background-color: #fca311;
     color: #003b73;
     font-weight: bold;
     padding: 15px 30px;
     border-radius: 50px;
     text-decoration: none;
-    margin-top: 25px;
+    margin-top: 20px;
     font-size: 1.1em;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: background-color 0.3s ease;
