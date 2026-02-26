@@ -7,7 +7,6 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0; 
 }
 
 /* This is the main container that establishes the positioning context */
@@ -42,7 +41,7 @@ body, html {
 
 .main-title {
     font-family: 'Luckiest Guy', cursive;
-    font-size: 2em;
+    font-size: 20px;
     color: #d90429;
     margin: 0;
     line-height: 1;
