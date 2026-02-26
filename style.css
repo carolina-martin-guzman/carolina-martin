@@ -42,7 +42,7 @@ body, html {
 
 .main-title {
     font-family: 'Luckiest Guy', cursive;
-    font-size: 3.8em;
+    font-size: 2em;
     color: #d90429;
     margin: 0;
     line-height: 1;
@@ -59,7 +59,7 @@ body, html {
 }
 
 .content-box p {
-    font-size: 1em;
+    font-size: 0.5em;
     font-weight: 500;
     margin-bottom: 10px;
 }
@@ -74,7 +74,7 @@ ul {
 li {
     font-weight: 500;
     margin-bottom: 8px;
-    font-size: 1em;
+    font-size: 0.5em;
 }
 
 li::before {
@@ -86,11 +86,11 @@ li::before {
     background-color: #fca311;
     color: #003b73;
     font-weight: bold;
-    padding: 15px 30px;
-    border-radius: 50px;
+    padding: 10px 20px;
+    border-radius: 30px;
     text-decoration: none;
     margin-top: 20px;
-    font-size: 1.1em;
+    font-size: 0.5em;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: background-color 0.3s ease;
 }
