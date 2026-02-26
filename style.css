@@ -7,23 +7,21 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f0f0f0; 
 }
 
-/* This is the main container that establishes the positioning context */
 .invitation-wrapper {
-    position: relative; /* Crucial for positioning the text on top */
-    width: 90%;
-    max-width: 500px; /* This will be the max size of your invitation */
+    position: relative; 
+    width: 90%; 
+    max-width: 500px;
 }
 
-/* This ensures your image is responsive and doesn't overflow its container */
 .background-image {
     width: 100%;
     height: auto;
-    display: block; /* Removes extra space below the image */
+    display: block; 
 }
 
-/* This is the container for your text. It sits on top of the image. */
 .text-overlay {
     position: absolute;
     top: 0;
@@ -41,25 +39,27 @@ body, html {
 
 .main-title {
     font-family: 'Luckiest Guy', cursive;
-    font-size: 20px;
+    font-size: 3.8em; 
     color: #d90429;
     margin: 0;
     line-height: 1;
     text-shadow: 3px 3px 0px #fff;
 }
 
+/* --- CHANGE #1: REMOVED THE BACKGROUND --- */
 .content-box {
-    border-radius: 15px;
-    padding: 10px 20px;
+    /* The background-color, padding, and border-radius have been removed */
     margin-top: 15px;
-    color: #003b73;
-    max-width: 70%;
+    color: #003b73; /* This sets the text color to dark blue */
+    max-width: 85%;
 }
 
+/* --- CHANGE #2: ADDED A SHADOW FOR READABILITY --- */
 .content-box p {
-    font-size: 0.5em;
-    font-weight: 500;
+    font-size: 1em; 
+    font-weight: 700; /* Made font slightly bolder */
     margin-bottom: 10px;
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.7); /* Subtle white shadow */
 }
 
 ul {
@@ -70,25 +70,28 @@ ul {
 }
 
 li {
-    font-weight: 500;
+    font-weight: 700; /* Made font slightly bolder */
     margin-bottom: 8px;
-    font-size: 0.5em;
+    font-size: 1em;
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.7); /* Subtle white shadow */
 }
 
 li::before {
     content: '⭐';
     margin-right: 10px;
+    /* This removes the shadow from the emoji itself */
+    text-shadow: none; 
 }
 
 .action-link {
     background-color: #fca311;
     color: #003b73;
     font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 30px;
+    padding: 15px 30px;
+    border-radius: 50px;
     text-decoration: none;
     margin-top: 20px;
-    font-size: 0.5em;
+    font-size: 1em; 
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: background-color 0.3s ease;
 }
