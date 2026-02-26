@@ -42,7 +42,7 @@ body, html {
 
 .main-title {
     font-family: 'Luckiest Guy', cursive;
-    font-size: 4.5em;
+    font-size: 3.8em;
     color: #d90429;
     margin: 0;
     line-height: 1;
@@ -55,11 +55,11 @@ body, html {
     padding: 10px 20px;
     margin-top: 15px;
     color: #003b73;
-    max-width: 90%;
+    max-width: 70%;
 }
 
 .content-box p {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 500;
     margin-bottom: 10px;
 }
