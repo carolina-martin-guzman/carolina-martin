@@ -13,7 +13,7 @@ body, html {
 /* This is the main container that establishes the positioning context */
 .invitation-wrapper {
     position: relative; /* Crucial for positioning the text on top */
-    width: 90%; /* Adjust width as needed */
+    width: 90%;
     max-width: 500px; /* This will be the max size of your invitation */
 }
 
