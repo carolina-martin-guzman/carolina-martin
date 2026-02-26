@@ -37,49 +37,46 @@ body, html {
     box-sizing: border-box;
 }
 
+/* --- ADJUSTMENT #1: Title made smaller --- */
 .main-title {
     font-family: 'Luckiest Guy', cursive;
-    font-size: 3.8em; 
+    font-size: 2em;
     color: #d90429;
     margin: 0;
     line-height: 1;
-    text-shadow: 3px 3px 0px #fff;
+    text-shadow: 2px 2px 0px #fff;
 }
 
-/* --- CHANGE #1: REMOVED THE BACKGROUND --- */
 .content-box {
-    /* The background-color, padding, and border-radius have been removed */
-    margin-top: 15px;
-    color: #003b73; /* This sets the text color to dark blue */
+    margin-top: 8px;
+    color: #003b73;
     max-width: 85%;
 }
 
-/* --- CHANGE #2: ADDED A SHADOW FOR READABILITY --- */
 .content-box p {
-    font-size: 1em; 
-    font-weight: 700; /* Made font slightly bolder */
-    margin-bottom: 10px;
-    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.7); /* Subtle white shadow */
+    font-size: 0.7em; 
+    font-weight: 700;
+    margin-bottom: 6px; 
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.8);
 }
 
 ul {
     list-style: none;
     padding: 0;
     text-align: left;
-    margin-top: 15px;
+    margin-top: 10px; 
 }
 
 li {
-    font-weight: 700; /* Made font slightly bolder */
-    margin-bottom: 8px;
-    font-size: 1em;
-    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.7); /* Subtle white shadow */
+    font-weight: 500;
+    margin-bottom: 2px; 
+    font-size: 0.7em; \
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.8);
 }
 
 li::before {
     content: '⭐';
     margin-right: 10px;
-    /* This removes the shadow from the emoji itself */
     text-shadow: none; 
 }
 
@@ -87,11 +84,11 @@ li::before {
     background-color: #fca311;
     color: #003b73;
     font-weight: bold;
-    padding: 15px 30px;
+    padding: 12px 20px; 
     border-radius: 50px;
     text-decoration: none;
-    margin-top: 20px;
-    font-size: 1em; 
+    margin-top: 15px; 
+    font-size: 0.7em; 
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: background-color 0.3s ease;
 }
